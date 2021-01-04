@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WebBreach</string>
+    <string name="accounts_number">%d accounts in the system</string>
+    <string name="breaches_list">Breaches List</string>
+    <string name="breach_date">Breach Date: %s"</string>
+    <string name="added">Added: %s</string>
+    <string name="modified">Modified: %s</string>
+</resources>
