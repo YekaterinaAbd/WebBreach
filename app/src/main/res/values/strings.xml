@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">WebBreach</string>
-    <string name="accounts_number">%d accounts in the system</string>
+    <string name="accounts_number">Accounts in the system: %d</string>
     <string name="breaches_list">Breaches List</string>
     <string name="breach_date">Breach Date: %s"</string>
-    <string name="added">Added: %s</string>
-    <string name="modified">Modified: %s</string>
+    <string name="added">Added Date: %s</string>
+    <string name="modified">Modified Date: %s</string>
+    <string name="domain">Domain</string>
+    <string name="description">Description</string>
+    <string name="compromised_data">Compromised Data</string>
+    <string name="dates">Dates</string>
+    <string name="back_image">Back image</string>
 </resources>

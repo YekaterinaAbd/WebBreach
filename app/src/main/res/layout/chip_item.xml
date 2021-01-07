@@ -7,7 +7,7 @@
     android:gravity="center"
     android:textColor="@color/black"
     app:chipBackgroundColor="#33B4B8D1"
-    app:chipCornerRadius="12dp"
+    app:chipCornerRadius="8dp"
     app:chipMinHeight="26dp"
     app:chipMinTouchTargetSize="0dp"
     tools:text="Hello" />

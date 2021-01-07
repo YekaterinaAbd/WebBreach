@@ -1,4 +1,4 @@
-package com.example.webbreach.view
+package com.example.webbreach.utils
 
 import android.app.Activity
 import android.content.Context
