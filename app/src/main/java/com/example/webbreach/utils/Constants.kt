@@ -1,4 +1,4 @@
-package com.example.webbreach.view
+package com.example.webbreach.utils
 
 const val ITEM = "ITEM"
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WebBreach</string>
+    <string name="app_name">SiteBreach</string>
     <string name="accounts_number">Accounts in the system: %d</string>
     <string name="breaches_list">Breaches List</string>
     <string name="breach_date">Breach Date: %s"</string>

@@ -1,16 +1,16 @@
-package com.example.webbreach.retrofit
+package com.example.webbreach.api
 
-import com.example.webbreach.model.SiteBreach
+import com.example.webbreach.model.Breach
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
 
-interface SiteBreachApi {
+interface BreachApi {
     @GET("breaches")
-    suspend fun getBreaches(): Response<List<SiteBreach>>
+    suspend fun getBreaches(): Response<List<Breach>>
 
     @GET("breach/{name}")
     suspend fun getBreachDetails(
         @Path("name") name: String
-    ): Response<SiteBreach>
+    ): Response<Breach>
 }

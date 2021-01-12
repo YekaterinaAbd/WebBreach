@@ -9,27 +9,27 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.webbreach.R
-import com.example.webbreach.model.SiteBreach
+import com.example.webbreach.model.Breach
 import com.example.webbreach.utils.DateUtil
 
 class BreachAdapter(
-    private val onClick: (item: SiteBreach) -> Unit
-) : ListAdapter<SiteBreach, SiteBreachViewHolder>(DiffUtilCallback()) {
+    private val onClick: (item: Breach) -> Unit
+) : ListAdapter<Breach, BreachViewHolder>(DiffUtilCallback()) {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SiteBreachViewHolder {
-        return SiteBreachViewHolder(
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BreachViewHolder {
+        return BreachViewHolder(
             onClick,
             LayoutInflater.from(parent.context).inflate(R.layout.breach_item, parent, false)
         )
     }
 
-    override fun onBindViewHolder(holder: SiteBreachViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: BreachViewHolder, position: Int) {
         holder.bind(getItem(position))
     }
 }
 
-class SiteBreachViewHolder(
-    private val onClick: (item: SiteBreach) -> Unit,
+class BreachViewHolder(
+    private val onClick: (item: Breach) -> Unit,
     view: View
 ) : RecyclerView.ViewHolder(view) {
 
@@ -39,7 +39,7 @@ class SiteBreachViewHolder(
     private val breachDate: TextView = view.findViewById(R.id.breach_date)
     private val pwnCount: TextView = view.findViewById(R.id.pwn_count)
 
-    fun bind(item: SiteBreach?) {
+    fun bind(item: Breach?) {
         if (item == null) return
 
         Glide.with(itemView.context).load(item.logoPath).into(logo)

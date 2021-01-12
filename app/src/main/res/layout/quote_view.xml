@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_red_background"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:translationZ="5dp"
+        app:elevation="10dp">
+
+        <TextView
+            android:id="@+id/quote_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            tools:text="Happiness is not in the mere possession of money; it lies in the joy of achievement, in the thrill of creative effort." />
+
+        <TextView
+            android:id="@+id/quote_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="end"
+            android:textColor="@color/white"
+            tools:text="(c) Franklin Roosevelt" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

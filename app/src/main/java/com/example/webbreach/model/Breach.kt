@@ -3,7 +3,7 @@ package com.example.webbreach.model
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
-data class SiteBreach(
+data class Breach(
     @SerializedName("Name") val name: String?,
     @SerializedName("Title") val title: String?,
     @SerializedName("Domain") val domain: String?,
