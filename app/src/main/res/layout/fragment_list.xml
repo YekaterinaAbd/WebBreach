@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.MainActivity">
+    tools:context=".presentation.ui.MainActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
 
-                <com.example.webbreach.utils.widgets.QuoteView
+                <com.example.webbreach.presentation.utils.widgets.QuoteView
                     android:id="@+id/quote_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
