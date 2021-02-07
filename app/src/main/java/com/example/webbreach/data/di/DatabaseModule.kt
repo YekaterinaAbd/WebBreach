@@ -12,7 +12,7 @@ val databaseModule = module {
         Room.databaseBuilder(
             application,
             BreachDatabase::class.java,
-            "database.db"
+            "database2.db"
         ).build()
 
     fun provideQuoteDao(database: BreachDatabase) = database.quoteDao()

@@ -48,6 +48,7 @@ class ListFragment : Fragment(R.layout.fragment_list) {
         super.onViewCreated(view, savedInstanceState)
         bindViews(view)
         setAdapter()
+        getQuote()
         setData()
     }
 
@@ -59,6 +60,10 @@ class ListFragment : Fragment(R.layout.fragment_list) {
     private fun setAdapter() {
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = adapter
+    }
+
+    private fun getQuote(){
+        quoteViewModel.getQuote()
     }
 
     private fun setData() {

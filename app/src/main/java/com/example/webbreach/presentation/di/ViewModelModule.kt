@@ -7,5 +7,5 @@ import org.koin.dsl.module
 
 val viewModelModule = module {
     viewModel { BreachViewModel(getBreachesUseCase = get(), breachModelMapper = get()) }
-    viewModel { QuoteViewModel(getLocalQuoteUseCase = get()) }
+    viewModel { QuoteViewModel(getLocalQuoteUseCase = get(), quoteModelMapper = get()) }
 }

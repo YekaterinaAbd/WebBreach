@@ -6,10 +6,10 @@ import com.example.webbreach.data.di.apiModule
 import com.example.webbreach.data.di.dataMapperModule
 import com.example.webbreach.data.di.databaseModule
 import com.example.webbreach.data.di.repositoryModule
-import com.example.webbreach.data.service.UploadQuotesWorker
 import com.example.webbreach.domain.di.useCaseModule
 import com.example.webbreach.presentation.di.modelMapperModule
 import com.example.webbreach.presentation.di.viewModelModule
+import com.example.webbreach.presentation.service.UploadQuotesWorker
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -59,7 +59,7 @@ class BreachApplication : Application() {
                 .build()
 
         WorkManager.getInstance(this).enqueueUniquePeriodicWork(
-            UploadQuotesWorker.WORK_NAME, ExistingPeriodicWorkPolicy.KEEP, repeatingRequest
+            UploadQuotesWorker.WORK_NAME, ExistingPeriodicWorkPolicy.REPLACE, repeatingRequest
         )
     }
 }

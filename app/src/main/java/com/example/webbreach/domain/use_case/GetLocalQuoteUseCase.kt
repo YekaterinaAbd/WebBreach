@@ -5,5 +5,5 @@ import com.example.webbreach.domain.repository.QuoteRepository
 class GetLocalQuoteUseCase(
     private val quoteRepository: QuoteRepository
 ) {
-    suspend fun getLocalQuote() = quoteRepository.getLocalQuote()
+    suspend fun invoke() = quoteRepository.getLocalQuote()
 }

@@ -9,7 +9,7 @@ import androidx.room.PrimaryKey
 data class QuoteEntity(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id") val id: Int = 1,
-    @ColumnInfo(name = "text") val quoteText: String,
+    @ColumnInfo(name = "text") val quoteText: String?,
     @Nullable
     @ColumnInfo(name = "author") val quoteAuthor: String?
 )

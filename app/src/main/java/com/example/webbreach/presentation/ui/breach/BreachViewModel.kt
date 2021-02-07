@@ -25,7 +25,7 @@ class BreachViewModel(
     private fun getBreaches() {
         viewModelScope.launch {
             val response = withTimeout(60_000) {
-                getBreachesUseCase.getBreaches()
+                getBreachesUseCase.invoke()
             }
             when (response) {
                 is Result.Success -> {
