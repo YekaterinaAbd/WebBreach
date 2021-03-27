@@ -3,6 +3,7 @@
 <p>Application for viewing website breaches</p>
 <p>API: https://haveibeenpwned.com/API/v3 </p>
 
+<h4>Stack</h4>
 <ul>
 <li>Clean Architecture</li>
 <li>Coroutines</li>
@@ -22,5 +23,5 @@
 
 <h4>Screenshots</h4>
 
-<img src="https://user-images.githubusercontent.com/47060392/111915383-2c71fb80-8aa0-11eb-8470-9744354933dc.jpg" height="500"> <img src="https://user-images.githubusercontent.com/47060392/111915399-3d227180-8aa0-11eb-906e-ca6b39c83439.jpg" height="500">
+<img src="https://user-images.githubusercontent.com/47060392/112714408-732e7e00-8f04-11eb-882d-f2dc9a47d817.png" height="600"> <img src="https://user-images.githubusercontent.com/47060392/112714425-8b9e9880-8f04-11eb-91be-5fa6b8f95f34.png" height="600">
 
